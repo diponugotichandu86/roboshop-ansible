@@ -23,8 +23,9 @@
     path: /etc/redis/redis.conf
     regexp: '127.0.0.1'
     replace: '0.0.0.0'
+
 - name: Restart Redis Service
-  ansible.builtin.systed:
+  ansible.builtin.systemd:
     name: redis
-    enable: true
+    enabled: true
     state: restarted
