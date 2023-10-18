@@ -14,8 +14,8 @@
 - name: Restart MySQL Services
   ansible.builtin.systemd:
     name: mysqld
-    enabled: yes
     state: restarted
+    enabled: yes
 
 - name: Change the default Root Password
   ansible.builtin.shell: mysql_secure_installation --set-root-pass RoboShop@1
