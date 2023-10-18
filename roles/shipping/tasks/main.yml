@@ -1,0 +1,4 @@
+- name: Import Maven
+  ansible.builtin.import_roles:
+    name: common
+    tasks_from: maven
