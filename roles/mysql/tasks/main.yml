@@ -14,7 +14,7 @@
 - name: Restart MySQL Services
   ansible.builtin.systemd:
     name: mysqld
-    enabled: true
+    enabled: yes
     state: restarted
 
 - name: Change the default Root Password
