@@ -1,9 +1,9 @@
 - name: Load NodeJS
   ansible.builtin.import_roles:
       name: common
-      tasks_from: nodejs
+      tasks_from: nodejs.yml
 
 - name: Load mongo client
   ansible.builtin.import_roles:
     name: common
-    tasks_from: mongo_schema_setup
+    tasks_from: mongo_schema_setup.yml
